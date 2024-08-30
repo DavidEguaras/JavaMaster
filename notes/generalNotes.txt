@@ -1,0 +1,7 @@
+#Everything Notes#
+
+1.How to compile a Java file in the terminal:
+    -Head to the location of the file to execute, use the command: javac nameOfTheFile.java, and then use the command: java nameOfTheFile.java
+
+2.
+
