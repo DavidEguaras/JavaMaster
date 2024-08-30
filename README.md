@@ -14,3 +14,5 @@
 ✅ **Maven**  
 ✅ **Spring Boot**  
 ✅ **Lots of Exercises**
+
+I already have some Java knowledge, so maybe the fundamental basics won't be as complete because i'll skip them (dataTypes, operations..) but i will review the rest
