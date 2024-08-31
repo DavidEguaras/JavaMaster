@@ -1,4 +1,4 @@
-package _0_ByteCodeCompiler;
+package es.davidEguaras._0_ByteCodeCompiler;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,9 +11,9 @@ public class Main {
 ByteCode of this class:
 // class version 66.0 (66)
 // access flags 0x21
-public class _0_ByteCodeCompiler.Main {
+public class es.davidEguaras._0_ByteCodeCompiler.Main {
 
-  // compiled from: _0_ByteCodeCompiler.Main.java
+  // compiled from: es.davidEguaras._0_ByteCodeCompiler.Main.java
 
   // access flags 0x1
   public <init>()V

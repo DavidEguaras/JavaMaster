@@ -1,6 +1,6 @@
-package Exercises;
+package Exercises._1_gettingStarted;
 
-public class _2_comparingStrings {
+public class comparingStrings {
     public static void main(String[] args) {
         String name1 = "David";
         String name2 = "David";

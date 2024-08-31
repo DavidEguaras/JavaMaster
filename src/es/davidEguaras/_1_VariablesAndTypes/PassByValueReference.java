@@ -1,4 +1,4 @@
-package _1_VariablesAndTypes;
+package es.davidEguaras._1_VariablesAndTypes;
 
 import java.awt.*;
 
