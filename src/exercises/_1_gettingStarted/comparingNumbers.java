@@ -1,4 +1,4 @@
-package Exercises._1_gettingStarted;
+package exercises._1_gettingStarted;
 /*
 Write a program that compares two numbers. Use any comparison operator
 Create 3 variables.

@@ -1,4 +1,4 @@
-package Exercises._3_conditionals;
+package exercises._3_conditionals;
 
 // create a for loop which goes from 0 to 20
 // print each even value

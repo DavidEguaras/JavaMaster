@@ -1,4 +1,4 @@
-package Exercises._2_loopsAndArrays;
+package exercises._2_loopsAndArrays;
 
  /*
         Write a program that adds total amount for this string "0.90, 1.00, 9.00, 8.78, 0.01".

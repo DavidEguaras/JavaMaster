@@ -1,4 +1,4 @@
-package Exercises._2_loopsAndArrays;
+package exercises._2_loopsAndArrays;
 
 // declare and initialize a String array which holds the values "a", "b", "c" and "d"
 // print the array to the console

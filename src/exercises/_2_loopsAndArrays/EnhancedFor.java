@@ -1,4 +1,4 @@
-package Exercises._2_loopsAndArrays;
+package exercises._2_loopsAndArrays;
 
 public class EnhancedFor {
     public static void main(String[] args) {

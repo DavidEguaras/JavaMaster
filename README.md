@@ -13,6 +13,6 @@
 ✅ **Unit Testing**  
 ✅ **Maven**  
 ✅ **Spring Boot**  
-✅ **Lots of Exercises**
+✅ **Lots of exercises**
 
 I already have some Java knowledge, so maybe the very fundamental basics won't be as complete because i'll skip them (variables, operations..) but i will review the rest
