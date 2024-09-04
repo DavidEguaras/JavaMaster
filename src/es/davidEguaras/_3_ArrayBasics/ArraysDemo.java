@@ -1,4 +1,4 @@
-package es.davidEguaras._3_ArraysVeryBasic;
+package es.davidEguaras._3_ArrayBasics;
 
 import java.util.Arrays;
 
