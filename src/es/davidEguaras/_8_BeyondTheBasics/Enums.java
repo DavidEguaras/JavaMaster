@@ -4,18 +4,11 @@ package es.davidEguaras._8_BeyondTheBasics;
 public class Enums {
 
     //the reason of having enums it's because now we have dataTypes to work with, not like when we use the final keyword where we would have a String, int, char...
+    //we have all the options encapsulated within
     enum Gender {
         MALE,
         FEMALE,
         OTHER
-    }
-
-    //we have all the options encapsulated within the TShirtSize Enum
-    enum TShirtSize{
-        S,
-        M,
-        L,
-        XL
     }
 
     public static void main(String[] args) {

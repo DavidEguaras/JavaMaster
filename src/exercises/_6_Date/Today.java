@@ -19,5 +19,6 @@ public class Today {
         System.out.println(LocalDateTime.now().format(dateTimeFormatter));
         System.out.println(LocalDate.now().format(dateFormatter));
 
+
     }
 }
