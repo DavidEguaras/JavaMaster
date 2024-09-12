@@ -1,0 +1,12 @@
+In Java, every class implicitly inherits from the Object class unless it explicitly extends another class.
+The Object class is the root of the Java class hierarchy. This means that:
+-All Classes Directly or Indirectly Inherit from Object:
+-If a class does not explicitly extend another class, it automatically extends Object.
+-If a class extends another class, it eventually inherits from Object through the chain of inheritance.
+
+Why Object is the Root of All Classes
+-The design of Java ensures that all classes share certain common behaviors and characteristics, which are defined in the Object class.
+
+By having every class inherit from Object, Java guarantees that every object can:
+-Be treated as an instance of Object.
+-Use the basic methods provided by Object, such as toString(), equals(), and hashCode().

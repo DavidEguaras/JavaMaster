@@ -1,0 +1,4 @@
+-Classes are made of properties and behaviors
+-We should never have access to the internal properties of our objects (but the methods/behaviors should be public in most cases),
+they should be accessed by getters and setters
+-If we don't declare a specific constructor, Java gives us one by default
