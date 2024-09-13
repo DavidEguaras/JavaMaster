@@ -2,3 +2,13 @@
 -We should never have access to the internal properties of our objects (but the methods/behaviors should be public in most cases),
 they should be accessed by getters and setters
 -If we don't declare a specific constructor, Java gives us one by default
+-@Override is mainly for readability, useful for knowing that a method from the parent class is being overwritten/overridden
+-POJO (Plain Old Java Object): A simple, lightweight Java object that:
+    Does not extend special classes or implement special interfaces.
+    Has private fields with public getter/setter methods.
+    Has no specific annotations or framework dependencies.
+    May have any type of constructor.
+    POJOs are used for creating simple objects that encapsulate data and behaviors, and they are flexible, easy to use, and easy to test.
+
+-A JavaBean is a special type of POJO (Plain Old Java Object) that follows specific conventions and is used primarily for encapsulating data in Java applications.
+JavaBeans are often used in frameworks (like Java EE or Spring) for handling data and properties in a standardized way.

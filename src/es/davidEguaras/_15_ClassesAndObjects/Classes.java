@@ -20,6 +20,11 @@ public class Classes {
 
         //using the toString method
         System.out.println(purrloin);
+
+        Cat[] cats = {neko, michi};
+
+        Person david = new Person("David", "Eguaras", Gender.MALE, cats);
+        System.out.println(david);
     }
 
 }

@@ -1,5 +1,7 @@
 package es.davidEguaras._15_ClassesAndObjects;
 
+import java.util.Objects;
+
 public class Cat {
     //These are properties
     private String name;
@@ -60,5 +62,18 @@ public class Cat {
     @Override
     public String toString() {
         return "Cat name: " +name+ ", Color: " +color+ ", Age: " +age;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return age == cat.age && Objects.equals(name, cat.name) && Objects.equals(color, cat.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, color);
     }
 }
