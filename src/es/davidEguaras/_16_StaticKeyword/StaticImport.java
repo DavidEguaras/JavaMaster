@@ -1,9 +1,14 @@
 package es.davidEguaras._16_StaticKeyword;
 
-//This is a static import
+
+/*
+This is a static import
+With static import, you can access static members (fields and methods)
+of a class directly without qualifying them with the class name. This reduces redundancy when using static members frequently.
+*/
 import static java.lang.Math.*;
 
-class StaticImportExample {
+class StaticImport {
     public static void main(String[] args) {
         double value = 64;
 

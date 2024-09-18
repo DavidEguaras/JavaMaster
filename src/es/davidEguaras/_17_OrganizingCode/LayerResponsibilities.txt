@@ -1,0 +1,57 @@
+1. Model Layer (Domain Objects/Entities)
+    The Model layer contains the data structure that defines your entities (objects).
+    The main purpose of this layer is to represent the data and its attributes,
+    so the methods here are typically simple getters, setters, and utility methods like toString().
+
+    What goes in the Model?
+        -Fields (attributes of the class, e.g., id...).
+        -Getters and setters (methods to get and set the values of the fields).
+        -toString() method (optional, to provide a readable representation of the object).
+        -Constructors (to initialize objects).
+
+
+
+2. DAO Layer (Data Access Object)
+    The DAO layer is responsible for managing data access and typically interacts with the database or other storage systems
+    (in our case, we’re simulating this with in-memory lists). The DAO methods are for CRUD operations: Create, Read, Update, Delete.
+    These methods manage the low-level access to the data, such as storing, retrieving, or removing entities.
+
+    What goes in the DAO?
+        -Methods to add, retrieve, update, and delete objects from storage (like a list, a database, or any other storage medium).
+        -Handling queries like retrieving an object by its ID or retrieving all objects of a certain type.
+
+
+
+3. Service Layer (Business Logic)
+    The Service layer contains the business logic of your application.
+    It calls the DAO methods to fetch or store data but adds another layer of rules or processing that the application needs to implement.
+    This is where things like validation, calculations, and decision-making happen.
+    You don’t usually handle direct data access here; instead, you call the DAO methods for that.
+
+    What goes in the Service?
+        -Methods to add, retrieve, or remove entities, but with business rules applied.
+        -Interaction with one or more DAOs to coordinate data retrieval and storage.
+        -Methods that provide complex operations combining multiple DAO methods.
+
+
+
+
+How They Work Together
+    The Model defines the objects, but it doesn’t know how to store or retrieve them.
+    The DAO interacts with the data storage but doesn’t apply any business rules.
+    The Service manages the application’s logic, calling DAO methods and working with Model objects.
+        Example Flow:
+
+        -Adding a Book:
+            The Service Layer receives a request to add a book. It might validate the year of publication, ensure all fields are filled, etc.
+            After applying business rules, the Service layer tells the DAO to save the book.
+            The DAO layer handles the low-level data storage, adding the Book object to the list (or database).
+
+        -Getting a Book:
+            The Service Layer receives a request to retrieve a book by its ID.
+            The Service layer might apply some logic (e.g., logging, validation, etc.), then calls the DAO to fetch the book.
+            The DAO retrieves the book from the storage and returns it.
+            Summary of Where Methods Go:
+            Model: Data fields, getters, setters, and utility methods (toString(), etc.).
+            DAO: CRUD methods (Create, Read, Update, Delete) to interact with storage.
+            Service: Business logic, validation, complex operations that combine multiple DAO methods.
