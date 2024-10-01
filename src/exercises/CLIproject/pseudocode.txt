@@ -16,7 +16,8 @@
 
 5️⃣ - View Available Electric Cars
 
-    Output all the cars from the Car.cars static array which have availability = true and it's engineType it's equal to electric
+    Output all the cars from the Car.cars static array which have
+     availability = true and it's engineType it's equal to electric
 
 6️⃣ - View all users
 
