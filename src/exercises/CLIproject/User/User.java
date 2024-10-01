@@ -7,8 +7,6 @@ import java.util.Arrays;
 
 public class User {
 
-    public static User[] users = new User[500];
-
     private int id;
     private String name;
     private String lastName;
@@ -21,14 +19,6 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.bookings = bookings;
-    }
-
-    public static User[] getUsers() {
-        return users;
-    }
-
-    public static void setUsers(User[] users) {
-        User.users = users;
     }
 
     public int getId() {

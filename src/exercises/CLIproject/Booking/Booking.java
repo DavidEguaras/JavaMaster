@@ -6,9 +6,6 @@ import exercises.CLIproject.User.User;
 import java.util.Date;
 
 public class Booking {
-
-    public static Booking[] bookings = new Booking[500];
-
     private int id;
     private Date startDate;
     private Date endDate;
@@ -21,14 +18,6 @@ public class Booking {
         this.endDate = endDate;
         this.user = user;
         this.car = car;
-    }
-
-    public static Booking[] getBookings() {
-        return bookings;
-    }
-
-    public static void setBookings(Booking[] bookings) {
-        Booking.bookings = bookings;
     }
 
     public int getId() {

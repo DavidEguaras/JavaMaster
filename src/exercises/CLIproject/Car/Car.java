@@ -4,9 +4,6 @@ import exercises.CLIproject.CarManufacturer;
 import exercises.CLIproject.EngineType;
 
 public class Car{
-
-    public static Car[] cars = new Car[500];
-
     private int id;
     private CarManufacturer manufacturer;
     private String model;
@@ -21,14 +18,6 @@ public class Car{
         this.pricePerDayRented = pricePerDayRented;
         this.engineType = engineType;
         this.available = available;
-    }
-
-    public static Car[] getCars() {
-        return cars;
-    }
-
-    public static void setCars(Car[] cars) {
-        Car.cars = cars;
     }
 
     public int getId() {

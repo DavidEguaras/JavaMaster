@@ -15,7 +15,8 @@ public class PassByValueReference {
         pointA.x = 100;
         pointB.y = 90;
 
-        //For both points the value is: x:100, y:90, why? because we are changing the REFERENCE OBJECT because they are POINTING to the SAME OBJECT in the HEAP
+        //For both points the value is: x:100, y:90, why? because we are changing the REFERENCE OBJECT because they are
+        // POINTING to the SAME OBJECT in the HEAP
         System.out.println(pointA);
         System.out.println(pointB);
 
