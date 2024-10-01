@@ -9,15 +9,15 @@ public class Booking {
     private int id;
     private Date startDate;
     private Date endDate;
-    private User user;
-    private Car car;
+    private int userID;
+    private int carID;
 
-    public Booking(int id, Date startDate, Date endDate, User user, Car car) {
+    public Booking(int id, Date startDate, Date endDate, int userID, int carID) {
         this.id = id;
         this.startDate = startDate;
         this.endDate = endDate;
-        this.user = user;
-        this.car = car;
+        this.userID = userID;
+        this.carID = carID;
     }
 
     public int getId() {
@@ -44,31 +44,20 @@ public class Booking {
         this.endDate = endDate;
     }
 
-    public User getUser() {
-        return user;
+    public int getUserID() {
+        return userID;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
-    public Car getCar() {
-        return car;
+    public int getCarID() {
+        return carID;
     }
 
-    public void setCar(Car car) {
-        this.car = car;
-    }
-
-    @Override
-    public String toString() {
-        return "Booking{" +
-                "id=" + id +
-                ", startDate=" + startDate +
-                ", endDate=" + endDate +
-                ", user=" + user +
-                ", car=" + car +
-                '}';
+    public void setCarID(int carID) {
+        this.carID = carID;
     }
 }
 
