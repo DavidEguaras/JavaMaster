@@ -26,4 +26,5 @@ public class CarDAO {
         //logic
         return electricCars;
     }
+
 }
