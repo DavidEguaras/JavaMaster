@@ -23,6 +23,7 @@ public class CarDAO {
                 return cars[i];
             }
         }
+        return null;
     }
 
     public Car[] viewAllAvailableCars (){

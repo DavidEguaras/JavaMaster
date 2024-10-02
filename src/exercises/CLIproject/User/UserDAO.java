@@ -26,7 +26,7 @@ public class UserDAO {
         return allUsers;
     }
 
-    public Car[] viewAllUserBookedCars(User user){
+    //public Car[] viewAllUserBookedCars(User user){
 
-    }
+    //}
 }
