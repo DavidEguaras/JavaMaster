@@ -1,0 +1,13 @@
+Encapsulation is one of the fundamental principles of object-oriented programming (OOP).
+
+It refers to the concept of bundling data (fields/attributes) and the methods that operate on that data into a single unit,
+typically a class, while restricting direct access to some of the object's components.
+
+This prevents external code from directly modifying the internal state of the object,
+promoting better control over the data and its behavior.
+
+
+In Java, encapsulation is implemented using:
+-Private fields: The class's fields (attributes) are declared as private so they cannot be accessed directly from outside the class.
+-Public getter and setter methods: These are used to access and update the values of private fields indirectly,
+                                   allowing for controlled access

@@ -1,0 +1,11 @@
+Problem: Robot Pathfinding on a Grid
+You have a m x n grid where a robot is placed at the top-left corner (position (0, 0)).
+The robot can only move either down or right at any point in time.
+The robot is trying to reach the bottom-right corner of the grid (position (m-1, n-1)).
+
+Your task is to determine how many unique paths the robot can take to reach the destination.
+
+Input:
+Two integers, m and n, representing the number of rows and columns in the grid.
+Output:
+The program should output the number of unique paths from the top-left to the bottom-right of the grid.
