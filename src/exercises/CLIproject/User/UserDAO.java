@@ -1,5 +1,7 @@
 package exercises.CLIproject.User;
 
+import exercises.CLIproject.Car.Car;
+
 public class UserDAO {
 
     public static User[] users = new User[500];
@@ -18,7 +20,13 @@ public class UserDAO {
 
     public User[] viewAllUsers(){
         User[] allUsers = new User[userCount];
-        //business logic
+        for (int i = 0; i < userCount; i++) {
+            allUsers[i] = users[i];
+        }
         return allUsers;
+    }
+
+    public Car[] viewAllUserBookedCars(User user){
+
     }
 }

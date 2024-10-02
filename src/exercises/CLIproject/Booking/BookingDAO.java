@@ -17,11 +17,11 @@ public class BookingDAO {
     }
 
     public Booking[] getAllBookings(){
-        Booking[] currentBookings = new Booking[bookingCount];
+        Booking[] allBookings = new Booking[bookingCount];
         for(int i = 0; i < bookingCount; i++){
-            currentBookings[i] = bookings[i];
+            allBookings[i] = bookings[i];
         }
-        return currentBookings;
+        return allBookings;
     }
 
 
