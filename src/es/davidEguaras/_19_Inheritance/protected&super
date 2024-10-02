@@ -1,0 +1,28 @@
+Protected and Super keywords:
+In Java, the super keyword is used to refer to the immediate parent class of the current object. It serves several important purposes:
+
+Accessing Parent Class Members: You can use super to access variables and methods from the parent class
+that are hidden or overridden in the child class.
+
+Calling Parent Class Constructors: It can be used to call a constructor of the parent class,
+which is particularly useful in a constructor of a subclass.
+
+
+
+
+In Java, the protected keyword is an access modifier that allows members (variables and methods) of a class to be accessible in several 
+contexts. Understanding how protected works is essential for designing class hierarchies and managing access control. 
+Here’s a detailed overview:
+
+Characteristics of the protected Keyword
+Visibility:
+    Members declared as protected are accessible within:
+        The same class.
+        Any subclass (derived class), even if it is in a different package.
+        Classes in the same package (regardless of whether they are subclasses).
+        
+Package-Level Access:
+Unlike private, which restricts access to the defining class only, protected also allows access to classes within the same package.
+
+Inheritance:
+protected members can be accessed in subclasses, allowing derived classes to inherit and use these members.

@@ -16,4 +16,9 @@ public class Programmer extends Employee{
     public void writeSomeCode(){
         System.out.println("Writing some code");
     }
+
+    @Override
+    public void sayHi() {
+        System.out.println("Foo");
+    }
 }

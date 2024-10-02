@@ -39,6 +39,7 @@ public class Employee {
         this.address = address;
     }
 
+
     public String getExperience() {
         return experience;
     }
@@ -68,5 +69,9 @@ public class Employee {
     @Override
     public int hashCode() {
         return Objects.hash(name, age, address, experience);
+    }
+
+    public void sayHi(){
+        System.out.println("Hello, my name is " + this.name);
     }
 }
