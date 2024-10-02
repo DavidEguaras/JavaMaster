@@ -1,4 +1,4 @@
-package es.davidEguaras._20_Abstraction;
+package es.davidEguaras._20_Abstraction.Intro;
 
 // When a class is declared as abstract, it means that we cannot create instances of that class.
 // In this case, the rationale for making the Animal class abstract is that it does not make sense to create a generic instance of an animal.

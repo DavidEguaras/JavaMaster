@@ -1,4 +1,4 @@
-package es.davidEguaras._20_Abstraction;
+package es.davidEguaras._20_Abstraction.Intro;
 
 public class Main {
     public static void main(String[] args) {
