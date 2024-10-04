@@ -9,7 +9,7 @@ import static java.math.BigDecimal.ZERO;
 public class BankAccount {
     private String name;
     private BigDecimal balance;
-    boolean hasOverdraft;
+    private boolean hasOverdraft;
 
     public BankAccount(String name) {
         this.name = name;
