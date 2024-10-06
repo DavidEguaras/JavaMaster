@@ -6,27 +6,24 @@ import java.awt.print.Book;
 import java.util.Arrays;
 
 public class User {
-
+    public static int userCount = 0;
     private int id;
     private String name;
     private String lastName;
     private String email;
     private Booking[] bookings = new Booking[10];
+    private int bookingCount = 0;
 
-    public User(int id, String name, String lastName, String email, Booking[] bookings) {
-        this.id = id;
+
+    public User(String name, String lastName, String email) {
+        this.id = userCount++;
         this.name = name;
         this.lastName = lastName;
         this.email = email;
-        this.bookings = bookings;
     }
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -59,6 +56,14 @@ public class User {
 
     public void setBookings(Booking[] bookings) {
         this.bookings = bookings;
+    }
+
+    public int getBookingCount() {
+        return bookingCount;
+    }
+
+    public void setBookingCount(int bookingCount) {
+        this.bookingCount = bookingCount;
     }
 
     @Override

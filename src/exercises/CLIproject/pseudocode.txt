@@ -1,41 +1,41 @@
-1️⃣ - Book Car
+            1️⃣ - Book Car
 
-    this method would just create an instance of the Booking class
+                this method would just create an instance of the Booking class
 
-2️⃣ - View All User Booked Cars
+            2️⃣ - View All User Booked Cars
 
-    this would output the bookedCars Array of the user
+                    this would output the bookedCars Array of the user
 
-3️⃣ - View All Bookings
+                3️⃣ - View All Bookings
 
-    this method would output the static bookingsRecord array from the booking class
+                    this method would output the static bookingsRecord array from the booking class
 
-4️⃣ - View Available Cars
+                4️⃣ - View Available Cars
 
-    Output all the cars from the Car.cars static array which have availability = true
+                    Output all the cars from the Car.cars static array which have availability = true
 
-5️⃣ - View Available Electric Cars
+                5️⃣ - View Available Electric Cars
 
-    Output all the cars from the Car.cars static array which have
-     availability = true and it's engineType it's equal to electric
+                    Output all the cars from the Car.cars static array which have
+                     availability = true and it's engineType it's equal to electric
 
-6️⃣ - View all users
+                6️⃣ - View all users
 
-    Output all the users from the static user array
+                    Output all the users from the static user array
 
-7️⃣ - Exit
+                7️⃣ - Exit
 
-    Exit the program
+                    Exit the program
 
 
-There should be 3 classes: User, Booking and Car
--Booking implementations:
-    A Booking will always have a User and a Car
-    The booking class will have a static array, to record all the bookings made
--User implementations:
-    Each user has a history (array) of all his bookings (current and previous)
-    The User class will have a static array to record all users created
--Car implementations
-    Car doesn't implement other classes, it's just a normal car
-    The Car class will have a static array to record all cars created
-    Each car must have a boolean attribute, to represent availability
+                There should be 3 classes: User, Booking and Car
+                -Booking implementations:
+                    A Booking will always have a User and a Car
+                    The booking class will have a static array, to record all the bookings made
+                -User implementations:
+                    Each user has a history (array) of all his bookings (current and previous)
+                    The User class will have a static array to record all users created
+                -Car implementations
+                    Car doesn't implement other classes, it's just a normal car
+                    The Car class will have a static array to record all cars created
+                    Each car must have a boolean attribute, to represent availability
