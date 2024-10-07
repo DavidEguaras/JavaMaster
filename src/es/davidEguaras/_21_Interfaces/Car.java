@@ -1,4 +1,4 @@
-package es.davidEguaras._21_Interfaces.Polymorphism;
+package es.davidEguaras._21_Interfaces;
 
 public class Car {
     private int currentSpeed;

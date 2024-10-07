@@ -1,4 +1,4 @@
-package es.davidEguaras._21_Interfaces.Polymorphism;
+package es.davidEguaras._21_Interfaces;
 
 import es.davidEguaras._20_Abstraction.Intro.Animal;
 import es.davidEguaras._20_Abstraction.Intro.Cat;

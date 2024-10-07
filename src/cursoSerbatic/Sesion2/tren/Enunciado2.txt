@@ -1,0 +1,7 @@
+Enunciado Tren
+
+Tren que permita registrar tickets
+El tren tiene que tener la posibilidad de agregar vagones
+Y los vagones tienen que tener la posbilidad de agregar personas
+
+Clases: Tren, vagon y persona
