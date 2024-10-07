@@ -1,6 +1,7 @@
-package cursoSerbatic.Sesion2.tren;
+package cursoSerbatic.sesion2.tren;
 
 public class Persona {
+    //----------------------attributes and constructors-----------------------
     private static int personasCounter = 0;
     private int id;
     private String nombre;
@@ -12,8 +13,10 @@ public class Persona {
         this.apellidos = apellidos;
         personasCounter++;
     }
+    //----------------------!attributes and constructors-----------------------
 
 
+    //----------------------getters and setters-----------------------
     public static int getPersonasCounter() {
         return personasCounter;
     }
@@ -45,4 +48,7 @@ public class Persona {
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
+    //----------------------!getters and setters-----------------------
+
+
 }

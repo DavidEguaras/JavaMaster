@@ -1,22 +1,22 @@
-package cursoSerbatic.Sesion2.tren;
+package cursoSerbatic.sesion2.tren;
 
 public class Vagon {
+//----------------------attributes and constructors-----------------------
+    //--------static
     private static int vagonCounter = 0;
+    //--------static
     private int id;
     private Persona[][] plazas;
 
-
-    //---------------------constructors------------------------
     public Vagon() {
         this.id = vagonCounter;
         this.plazas = new Persona[16][4];
         vagonCounter++;
     }
-    //---------------------!constructors------------------------
+//----------------------!attributes and constructors-----------------------
 
 
-
-    //-----------------------getters and setters-----------------------
+//-----------------------getters and setters-----------------------
     public int getId() {
         return id;
     }
@@ -29,10 +29,10 @@ public class Vagon {
     public void setPlazas(Persona[][] plazas) {
         this.plazas = plazas;
     }
-    //!----------------------getters and setters-----------------------
+//!----------------------getters and setters-----------------------
 
 
-
+//----------------------methods----------------------
     public void imprimirPlazasVagon() {
         System.out.println("");
         // Indicamos las columnas de la tabla
@@ -63,13 +63,15 @@ public class Vagon {
     }
 
     public boolean comprobarDisponibilidadVagon (){
-        boolean plazaDisponible = false;
         for(int i = 0; i < plazas.length; i++){
-            for(int j = 0; i < plazas.length; i++){
-
+            for(int j = 0; j < plazas[i].length; j++){
+                if(plazas[i][j] != null){
+                    return true;
+                }
             }
         }
-
-        return plazaDisponible;
+        return false;
     }
+//----------------------!methods----------------------
+
 }
