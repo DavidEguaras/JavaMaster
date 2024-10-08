@@ -5,26 +5,21 @@ import cursoSerbatic.sesion3.Banco.tiposUsuario.Cliente;
 
 public class CuentaNomina extends Cuenta {
 
-    private final double COMISION = 0.05;
+    private final double COMISION = 0.0005; // 0.05% de comision
 
     public CuentaNomina(Cliente cliente, int numeroCuenta, double saldoTotalCuenta) {
         super(cliente, numeroCuenta, saldoTotalCuenta);
     }
 
-    @Override
-    public void realizarIngreso(double cantidadIngresada) {
-        if (cantidadIngresada > 1500) {
-            double nuevoSaldo = (getSaldoTotalCuenta() + cantidadIngresada) * 0.01;
-            setSaldoTotalCuenta(nuevoSaldo);
-            System.out.println("Se ha aplicado un interés especial por el ingreso de más de 1500$. Nuevo saldo: " + nuevoSaldo + "$");
-        } else {
-            super.realizarIngreso(cantidadIngresada);
-        }
-    }
+    public void realizarTransferenciaConComision(Cuenta cuentaDestino, double cantidadTransferida) {
+        double comision = cantidadTransferida * COMISION;
+        double cantidadTotal = cantidadTransferida + comision;
 
-    public void realizarTransferenciaComisionNomina(Cuenta cuentaDestino, double cantidadTransferida){
-        super.validarTransferencia(cantidadTransferida);
-        setSaldoTotalCuenta(getSaldoTotalCuenta() - cantidadTransferida + cantidadTransferida * COMISION);
-        cuentaDestino.setSaldoTotalCuenta(cuentaDestino.getSaldoTotalCuenta() + cantidadTransferida);
+        if (validarTransferencia(cantidadTotal)) {
+            setSaldoTotalCuenta(getSaldoTotalCuenta() - comision);
+            System.out.println("Se ha aplicado una comisión de " + comision + "$.");
+            //llamamos al metodo de la clase padre
+            super.realizarTransferencia(cuentaDestino, cantidadTransferida);
+        }
     }
 }

@@ -56,18 +56,18 @@ public class Cuenta {
         System.out.println("Se ha realizado la transferencia de " + cantidadTransferida + "$");
     }
 
-    public void validarTransferencia(double cantidadTransferida) {
+    public boolean validarTransferencia(double cantidadTransferida) {
         if (cantidadTransferida <= 0) {
             System.out.println("La cantidad a transferir debe ser mayor a cero");
-            return;
+            return false;
         }
+        else if (cantidadTransferida > saldoTotalCuenta) {
+            System.out.println("No tienes suficiente saldo para realizar la transferencia");
+            return false;
 
-        if (cantidadTransferida > saldoTotalCuenta) {
-            System.out.println("No tienes suficiente saldo para realizar la transferencia.");
-            return;
+        }else{
+            return true;
         }
-
-        System.out.println("Se ha realizado la transferencia de " + cantidadTransferida + "$");
     }
 
 }
