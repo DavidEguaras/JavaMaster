@@ -1,7 +1,7 @@
 package cursoSerbatic.sesion3.Banco.tiposUsuario;
 
-import cursoSerbatic.sesion3.Banco.Contacto;
-import cursoSerbatic.sesion3.Banco.Direccion;
+import cursoSerbatic.sesion3.Banco.infoUsuarios.Contacto;
+import cursoSerbatic.sesion3.Banco.infoUsuarios.Direccion;
 import cursoSerbatic.sesion3.Banco.Usuario;
 
 public class Cliente extends Usuario {

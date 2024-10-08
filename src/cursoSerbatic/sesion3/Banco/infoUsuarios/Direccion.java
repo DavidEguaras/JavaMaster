@@ -1,4 +1,4 @@
-package cursoSerbatic.sesion3.Banco;
+package cursoSerbatic.sesion3.Banco.infoUsuarios;
 
 public class Direccion {
 

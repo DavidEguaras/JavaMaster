@@ -1,5 +1,8 @@
 package cursoSerbatic.sesion3.Banco;
 
+import cursoSerbatic.sesion3.Banco.infoUsuarios.Contacto;
+import cursoSerbatic.sesion3.Banco.infoUsuarios.Direccion;
+
 public class Usuario {
 
     private String DNI;

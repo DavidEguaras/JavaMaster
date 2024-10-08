@@ -56,12 +56,6 @@ public class Cuenta {
         System.out.println("Se ha realizado la transferencia de " + cantidadTransferida + "$");
     }
 
-    public void realizarTransferenciaComision(Cuenta cuentaDestino, double cantidadTransferida, double comision){
-        validarTransferencia(cantidadTransferida);
-        saldoTotalCuenta =- cantidadTransferida;
-        cuentaDestino.saldoTotalCuenta += cantidadTransferida;
-    }
-
     public void validarTransferencia(double cantidadTransferida) {
         if (cantidadTransferida <= 0) {
             System.out.println("La cantidad a transferir debe ser mayor a cero");
