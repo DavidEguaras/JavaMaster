@@ -6,11 +6,11 @@ public class Vagon {
     private static int vagonCounter = 0;
     //--------static
     private int id;
-    private Persona[][] plazas;
+    private cursoSerbatic.sesion2.tren.Persona[][] plazas;
 
     public Vagon() {
         this.id = vagonCounter;
-        this.plazas = new Persona[16][4];
+        this.plazas = new cursoSerbatic.sesion2.tren.Persona[16][4];
         vagonCounter++;
     }
 //----------------------!attributes and constructors-----------------------
@@ -23,7 +23,7 @@ public class Vagon {
     public void setId(int id) {
         this.id = id;
     }
-    public Persona[][] getPlazas() {
+    public cursoSerbatic.sesion2.tren.Persona[][] getPlazas() {
         return plazas;
     }
     public void setPlazas(Persona[][] plazas) {
@@ -50,7 +50,7 @@ public class Vagon {
 
             //Iteramos las columnas
             for (int j = 0; j < plazas[i].length; j++) {
-                // Si la plaza esta libre
+                // Si la plaza no esta libre
                 if (plazas[i][j] != null) {
                     System.out.print(" L |");
                 } else {
@@ -65,7 +65,7 @@ public class Vagon {
     public boolean comprobarDisponibilidadVagon (){
         for(int i = 0; i < plazas.length; i++){
             for(int j = 0; j < plazas[i].length; j++){
-                if(plazas[i][j] != null){
+                if(plazas[i][j] == null){
                     return true;
                 }
             }

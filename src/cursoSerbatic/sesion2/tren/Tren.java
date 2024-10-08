@@ -1,5 +1,8 @@
 package cursoSerbatic.sesion2.tren;
 
+
+import java.util.Arrays;
+
 public class Tren {
 //----------------------attributes and constructors-----------------------
     //--------static
@@ -134,7 +137,6 @@ public class Tren {
         for (int fila = 0; fila < plazasVagonDisponible.length; fila++) {
             for (int columna = 0; columna < plazasVagonDisponible[fila].length; columna++) {
                 if (plazasVagonDisponible[fila][columna] == null) {
-
                     plazasVagonDisponible[fila][columna] = persona;
                     System.out.println("✅Su reserva ha sido realizada correctamente✅, imprimiendo ticket...");
                     imprimirTicket(numeroVagon, persona, fila, columna);
@@ -146,7 +148,17 @@ public class Tren {
         System.out.println("No hay plazas disponibles en el vagón " + numeroVagon + ".");
     }
 
-    //--------!public
+    @Override
+    public String toString() {
+        return "Tren{" +
+                "id=" + id +
+                ", nombre='" + nombre + '\'' +
+                ", lugarSalida='" + lugarSalida + '\'' +
+                ", lugarDestino='" + lugarDestino + '\'' +
+                ", vagones=" + Arrays.toString(vagones) +
+                '}';
+    }
+//--------!public
 //----------------------!methods----------------------
 
 
