@@ -1,4 +1,4 @@
-package cursoSerbatic.sesion2.cadenas;
+package cursoSerbatic.sesion2.strings;
 
 public class Main {
     public static void main(String[] args) {

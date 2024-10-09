@@ -1,4 +1,4 @@
-package cursoSerbatic.sesion2.tren;
+package cursoSerbatic.sesion2.arrays;
 
 import java.util.Scanner;
 

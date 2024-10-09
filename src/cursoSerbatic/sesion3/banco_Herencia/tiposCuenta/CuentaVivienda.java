@@ -1,7 +1,6 @@
-package cursoSerbatic.sesion3.Banco.tiposCuenta;
+package cursoSerbatic.sesion3.banco_Herencia.tiposCuenta;
 
-import cursoSerbatic.sesion3.Banco.Cuenta;
-import cursoSerbatic.sesion3.Banco.tiposUsuario.Cliente;
+import cursoSerbatic.sesion3.banco_Herencia.tiposUsuario.Cliente;
 
 public class CuentaVivienda extends Cuenta {
 

@@ -1,4 +1,4 @@
-package cursoSerbatic.sesion2.tren;
+package cursoSerbatic.sesion2.arrays;
 
 public class Vagon {
 //----------------------attributes and constructors-----------------------
@@ -6,11 +6,11 @@ public class Vagon {
     private static int vagonCounter = 0;
     //--------static
     private int id;
-    private cursoSerbatic.sesion2.tren.Persona[][] plazas;
+    private cursoSerbatic.sesion2.arrays.Persona[][] plazas;
 
     public Vagon() {
         this.id = vagonCounter;
-        this.plazas = new cursoSerbatic.sesion2.tren.Persona[16][4];
+        this.plazas = new cursoSerbatic.sesion2.arrays.Persona[16][4];
         vagonCounter++;
     }
 //----------------------!attributes and constructors-----------------------
@@ -23,7 +23,7 @@ public class Vagon {
     public void setId(int id) {
         this.id = id;
     }
-    public cursoSerbatic.sesion2.tren.Persona[][] getPlazas() {
+    public cursoSerbatic.sesion2.arrays.Persona[][] getPlazas() {
         return plazas;
     }
     public void setPlazas(Persona[][] plazas) {

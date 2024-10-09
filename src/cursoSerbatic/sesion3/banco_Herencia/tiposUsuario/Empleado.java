@@ -1,8 +1,7 @@
-package cursoSerbatic.sesion3.Banco.tiposUsuario;
+package cursoSerbatic.sesion3.banco_Herencia.tiposUsuario;
 
-import cursoSerbatic.sesion3.Banco.infoUsuarios.Contacto;
-import cursoSerbatic.sesion3.Banco.infoUsuarios.Direccion;
-import cursoSerbatic.sesion3.Banco.Usuario;
+import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Contacto;
+import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Direccion;
 
 public class Empleado extends Usuario {
 

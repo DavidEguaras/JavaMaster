@@ -1,8 +1,8 @@
-package cursoSerbatic.sesion3.Banco;
+package cursoSerbatic.sesion3.banco_Herencia.tiposCuenta;
 
-import cursoSerbatic.sesion3.Banco.tiposUsuario.Cliente;
+import cursoSerbatic.sesion3.banco_Herencia.tiposUsuario.Cliente;
 
-public class Cuenta {
+public class Cuenta implements Transferible {
 
     private String dniCliente;
     private int numeroCuenta;
@@ -48,12 +48,10 @@ public class Cuenta {
         System.out.println("Se ha realizado el ingreso de " + cantidadIngresada + "$");
     }
 
-    public void realizarTransferencia(Cuenta cuentaDestino, double cantidadTransferida) {
-        validarTransferencia(cantidadTransferida);
 
-        saldoTotalCuenta -= cantidadTransferida;
-        cuentaDestino.saldoTotalCuenta += cantidadTransferida;
-        System.out.println("Se ha realizado la transferencia de " + cantidadTransferida + "$");
+    public void realizarTransferencia(Cuenta cuentaDestino, double cantidadTransferida){
+        this.transferir(this, cuentaDestino, cantidadTransferida);
+
     }
 
     public boolean validarTransferencia(double cantidadTransferida) {
@@ -64,7 +62,6 @@ public class Cuenta {
         else if (cantidadTransferida > saldoTotalCuenta) {
             System.out.println("No tienes suficiente saldo para realizar la transferencia");
             return false;
-
         }else{
             return true;
         }
