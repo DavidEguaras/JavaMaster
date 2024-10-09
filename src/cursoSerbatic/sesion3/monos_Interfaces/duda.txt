@@ -1,0 +1,3 @@
+
+-Seria correcto utilizar clases abstractas para los metodos de grupo y que dependiendo de un atributo enum de la clase que fuese tipo comida,
+el resto de metodos que no son de su comida se volviesen abstractos al instanciar ese objeto
