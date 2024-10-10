@@ -1,5 +1,6 @@
 package cursoSerbatic.sesion3.banco_Herencia.tiposUsuario;
 
+import cursoSerbatic.sesion3.banco_Herencia.correos.clases.DireccionCorreo;
 import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Contacto;
 import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Direccion;
 
@@ -11,16 +12,17 @@ public class Usuario {
     private String apellido2;
     private Direccion direccion;
     private Contacto contacto;
+    private DireccionCorreo direccionCorreo;
 
-    public Usuario(String DNI, String nombre, String apellido1, String apellido2, Direccion direccion, Contacto contacto) {
+    public Usuario(String DNI, String nombre, String apellido1, String apellido2, Direccion direccion, Contacto contacto, DireccionCorreo direccionCorreo) {
         this.DNI = DNI;
         this.nombre = nombre;
         this.apellido1 = apellido1;
         this.apellido2 = apellido2;
         this.direccion = direccion;
         this.contacto = contacto;
+        this.direccionCorreo = direccionCorreo;
     }
-
 
     public String getDNI() {
         return DNI;
@@ -68,6 +70,14 @@ public class Usuario {
 
     public void setContacto(Contacto contacto) {
         this.contacto = contacto;
+    }
+
+    public DireccionCorreo getDireccionCorreo() {
+        return direccionCorreo;
+    }
+
+    public void setDireccionCorreo(DireccionCorreo direccionCorreo) {
+        this.direccionCorreo = direccionCorreo;
     }
 }
 
