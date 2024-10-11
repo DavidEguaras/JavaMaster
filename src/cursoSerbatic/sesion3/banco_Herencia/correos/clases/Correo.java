@@ -7,11 +7,13 @@ public class Correo {
     private DireccionCorreo direccionCorreoDestino;
     private DireccionCorreo direccionCorreoOrigen;
     private String contenido;
+    private boolean leido;
 
-    public Correo(Usuario usuarioReceptor, Usuario usuarioEmisor, String contenido) {
+    public Correo(Usuario usuarioReceptor, Usuario usuarioEmisor, String contenido, boolean leido) {
         this.direccionCorreoDestino = usuarioReceptor.getDireccionCorreo();
         this.direccionCorreoOrigen = usuarioEmisor.getDireccionCorreo();
         this.contenido = contenido;
+        this.leido = leido;
     }
 
     public DireccionCorreo getDireccionCorreoDestino() {

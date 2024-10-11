@@ -4,6 +4,7 @@ import cursoSerbatic.sesion3.banco_Herencia.tiposUsuario.Cliente;
 
 public class Cuenta implements Transferible {
 
+    //--------------------atributos y constructores--------------------
     private String dniCliente;
     private int numeroCuenta;
     private double saldoTotalCuenta;
@@ -13,6 +14,8 @@ public class Cuenta implements Transferible {
         this.numeroCuenta = numeroCuenta;
         this.saldoTotalCuenta = saldoTotalCuenta;
     }
+    //--------------------atributos y constructores--------------------
+
 
     public String getDniCliente() {
         return dniCliente;
@@ -37,6 +40,7 @@ public class Cuenta implements Transferible {
     public void setSaldoTotalCuenta(double saldoTotalCuenta) {
         this.saldoTotalCuenta = saldoTotalCuenta;
     }
+
 
 
     public void visualizarSaldo(){

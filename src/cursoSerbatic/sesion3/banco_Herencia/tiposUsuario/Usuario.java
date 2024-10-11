@@ -1,10 +1,11 @@
 package cursoSerbatic.sesion3.banco_Herencia.tiposUsuario;
 
 import cursoSerbatic.sesion3.banco_Herencia.correos.clases.DireccionCorreo;
+import cursoSerbatic.sesion3.banco_Herencia.correos.clases.ListaCorreos;
 import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Contacto;
 import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Direccion;
 
-public class Usuario {
+public abstract class Usuario {
 
     private String DNI;
     private String nombre;
@@ -13,6 +14,7 @@ public class Usuario {
     private Direccion direccion;
     private Contacto contacto;
     private DireccionCorreo direccionCorreo;
+
 
     public Usuario(String DNI, String nombre, String apellido1, String apellido2, Direccion direccion, Contacto contacto, DireccionCorreo direccionCorreo) {
         this.DNI = DNI;
@@ -27,6 +29,7 @@ public class Usuario {
     public String getDNI() {
         return DNI;
     }
+
 
     public void setDNI(String DNI) {
         this.DNI = DNI;
@@ -78,6 +81,23 @@ public class Usuario {
 
     public void setDireccionCorreo(DireccionCorreo direccionCorreo) {
         this.direccionCorreo = direccionCorreo;
+    }
+
+
+
+
+    public boolean puedeEnviarCorreo(){
+        return false;
+    }
+    public boolean puedeRecibirCorreo(){
+        return false;
+    }
+
+    public ListaCorreos getCorreosEnviados(){
+        return null;
+    }
+    public ListaCorreos getCorreosRecibidos(){
+        return null;
     }
 }
 

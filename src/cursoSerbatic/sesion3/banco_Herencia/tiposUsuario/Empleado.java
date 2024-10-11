@@ -1,8 +1,6 @@
 package cursoSerbatic.sesion3.banco_Herencia.tiposUsuario;
 
 import cursoSerbatic.sesion3.banco_Herencia.correos.clases.DireccionCorreo;
-import cursoSerbatic.sesion3.banco_Herencia.correos.clases.ListaCorreosEnviados;
-import cursoSerbatic.sesion3.banco_Herencia.correos.clases.ListaCorreosRecibidos;
 import cursoSerbatic.sesion3.banco_Herencia.correos.interfaces.EmisorCorreo;
 import cursoSerbatic.sesion3.banco_Herencia.correos.interfaces.ReceptorCorreo;
 import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Contacto;
@@ -15,13 +13,14 @@ public class Empleado extends Usuario implements EmisorCorreo<Cliente>, Receptor
     private ListaCorreosRecibidos correosRecibidos;
     private ListaCorreosEnviados correosEnviados;
 
-
     public Empleado(String DNI, String nombre, String apellido1, String apellido2, Direccion direccion, Contacto contacto, DireccionCorreo direccionCorreo, String username, String password, ListaCorreosRecibidos correosRecibidos, ListaCorreosEnviados correosEnviados) {
         super(DNI, nombre, apellido1, apellido2, direccion, contacto, direccionCorreo);
         this.username = username;
         this.password = password;
         this.correosRecibidos = correosRecibidos;
         this.correosEnviados = correosEnviados;
+        super.setPuedeEnviarCorreo(true);
+        super.setPuedeRecibirCorreo(true);
     }
 
     public ListaCorreosRecibidos getCorreosRecibidos() {
