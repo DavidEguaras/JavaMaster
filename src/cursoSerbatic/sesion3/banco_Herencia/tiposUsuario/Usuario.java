@@ -5,8 +5,11 @@ import cursoSerbatic.sesion3.banco_Herencia.correos.clases.ListaCorreos;
 import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Contacto;
 import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Direccion;
 
+import java.util.ArrayList;
+
 public abstract class Usuario {
 
+    //-----------------------atributos & constructores-----------------------
     private String DNI;
     private String nombre;
     private String apellido1;
@@ -14,7 +17,6 @@ public abstract class Usuario {
     private Direccion direccion;
     private Contacto contacto;
     private DireccionCorreo direccionCorreo;
-
 
     public Usuario(String DNI, String nombre, String apellido1, String apellido2, Direccion direccion, Contacto contacto, DireccionCorreo direccionCorreo) {
         this.DNI = DNI;
@@ -25,11 +27,33 @@ public abstract class Usuario {
         this.contacto = contacto;
         this.direccionCorreo = direccionCorreo;
     }
+    //-----------------------!atributos & constructores-----------------------
 
+
+    //-----------------------metodos de correos-----------------------
+    //en las clases hijas donde estas condiciones sean diferentes, realizaremos override
+    public boolean puedeEnviarCorreo(){
+        return false;
+    }
+
+    public boolean puedeRecibirCorreo(){
+        return false;
+    }
+
+    public ListaCorreos getCorreosEnviados(){
+        return null;
+    }
+
+    public ListaCorreos getCorreosRecibidos(){
+        return null;
+    }
+    //-----------------------metodos de correos-----------------------
+
+
+    //-----------------------getters & setters-----------------------
     public String getDNI() {
         return DNI;
     }
-
 
     public void setDNI(String DNI) {
         this.DNI = DNI;
@@ -83,21 +107,10 @@ public abstract class Usuario {
         this.direccionCorreo = direccionCorreo;
     }
 
+    //-----------------------getters & setters-----------------------
 
 
 
-    public boolean puedeEnviarCorreo(){
-        return false;
-    }
-    public boolean puedeRecibirCorreo(){
-        return false;
-    }
 
-    public ListaCorreos getCorreosEnviados(){
-        return null;
-    }
-    public ListaCorreos getCorreosRecibidos(){
-        return null;
-    }
 }
 

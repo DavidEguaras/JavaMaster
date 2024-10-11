@@ -6,10 +6,11 @@ import cursoSerbatic.sesion3.banco_Herencia.correos.clases.ListaCorreos;
 import cursoSerbatic.sesion3.banco_Herencia.tiposUsuario.Usuario;
 
 public interface EmisorCorreo <TipoUsuario extends Usuario>{
-
-    public default boolean enviarCorreo(Usuario usuarioEmisor, String mensaje, Usuario usuarioReceptor, ListaCorreos listaCorreosEnviados){
-        if(usuarioReceptor instanceof ReceptorCorreo){
-            Correo correo = new Correo(usuarioEmisor, usuarioReceptor, mensaje, false);
+    public default boolean enviarCorreo(Usuario usuarioEmisor, ListaCorreos correosEnviados, String asunto, String mensaje, Usuario usuarioReceptor){
+        if(usuarioEmisor.puedeRecibirCorreo()){
+            Correo correo = new Correo(usuarioEmisor, usuarioReceptor, asunto, mensaje, false);
+            usuarioEmisor.getCorreosEnviados().agregarCorreo(correo);
+            usuarioReceptor.getCorreosRecibidos().agregarCorreo(correo);
             return true;
         }
         return false;

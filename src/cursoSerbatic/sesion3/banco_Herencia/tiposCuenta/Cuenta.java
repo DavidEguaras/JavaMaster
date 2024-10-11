@@ -14,9 +14,10 @@ public class Cuenta implements Transferible {
         this.numeroCuenta = numeroCuenta;
         this.saldoTotalCuenta = saldoTotalCuenta;
     }
-    //--------------------atributos y constructores--------------------
+    //--------------------!atributos y constructores--------------------
 
 
+    //-----------------------getters & setters-----------------------
     public String getDniCliente() {
         return dniCliente;
     }
@@ -40,9 +41,10 @@ public class Cuenta implements Transferible {
     public void setSaldoTotalCuenta(double saldoTotalCuenta) {
         this.saldoTotalCuenta = saldoTotalCuenta;
     }
+    //-----------------------!getters & setters-----------------------
 
 
-
+    //-----------------------metodos-----------------------
     public void visualizarSaldo(){
         System.out.println(saldoTotalCuenta);
     }
@@ -51,7 +53,6 @@ public class Cuenta implements Transferible {
         saldoTotalCuenta += cantidadIngresada;
         System.out.println("Se ha realizado el ingreso de " + cantidadIngresada + "$");
     }
-
 
     public void realizarTransferencia(Cuenta cuentaDestino, double cantidadTransferida){
         this.transferir(this, cuentaDestino, cantidadTransferida);
@@ -70,5 +71,7 @@ public class Cuenta implements Transferible {
             return true;
         }
     }
+    //-----------------------metodos-----------------------
+
 
 }
