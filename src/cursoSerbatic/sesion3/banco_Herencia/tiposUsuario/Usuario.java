@@ -31,7 +31,7 @@ public abstract class Usuario {
 
 
     //-----------------------metodos de correos-----------------------
-    //en las clases hijas donde estas condiciones sean diferentes, realizaremos override
+    //en las clases hijas donde estas condiciones sean diferentes(en base a las interfaces que implementen, realizaremos override
     public boolean puedeEnviarCorreo(){
         return false;
     }

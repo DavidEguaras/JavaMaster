@@ -1,4 +1,3 @@
-
 package cursoSerbatic.sesion3.banco_Herencia.tiposUsuario;
 
 import cursoSerbatic.sesion3.banco_Herencia.correos.clases.DireccionCorreo;
@@ -7,6 +6,7 @@ import cursoSerbatic.sesion3.banco_Herencia.correos.interfaces.EmisorCorreo;
 import cursoSerbatic.sesion3.banco_Herencia.correos.interfaces.ReceptorCorreo;
 import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Contacto;
 import cursoSerbatic.sesion3.banco_Herencia.infoUsuarios.Direccion;
+
 
 public class Empleado extends Usuario implements EmisorCorreo<Cliente>, ReceptorCorreo<Cliente> {
 
@@ -76,7 +76,4 @@ public class Empleado extends Usuario implements EmisorCorreo<Cliente>, Receptor
         this.password = password;
     }
     //---------------------------getters & setters---------------------------
-
-
-
 }

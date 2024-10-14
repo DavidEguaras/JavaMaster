@@ -27,7 +27,6 @@ public class TryWithResources {
         ){
             writer.println("Hello");
             writer.println("World");
-
         } catch (IOException e) {
             System.out.println(e.getMessage());
             throw new RuntimeException(e);
