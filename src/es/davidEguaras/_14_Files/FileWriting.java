@@ -9,7 +9,6 @@ public class FileWriting {
     public static void main(String[] args) {
         File file = createFile("src/foo.txt");
         writeToFile(file, false);
-
     }
 
     private static void writeToFile(File file, boolean append){

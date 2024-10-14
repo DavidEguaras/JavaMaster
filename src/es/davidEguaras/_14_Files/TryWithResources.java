@@ -1,12 +1,11 @@
 package es.davidEguaras._14_Files;
 
 import java.io.*;
+import java.util.Random;
 import java.util.Scanner;
 
 public class TryWithResources {
     public static void main(String[] args) {
-
-
         File file = createFile("src/foo.txt");
         writeFileWithTryResources(file, false);
 
@@ -47,4 +46,3 @@ public class TryWithResources {
         }
     }
 }
-

@@ -10,3 +10,6 @@
 3.A class should be closed for modification but open for extension
 
 4.The final keyword makes the reference final and non-modifiable, but not the object it is pointing to
+
+
+jira

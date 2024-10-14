@@ -13,7 +13,7 @@ ByteCode of this class:
 // access flags 0x21
 public class es.davidEguaras._0_ByteCodeCompiler.Main {
 
-  // compiled from: es.davidEguaras._0_ByteCodeCompiler.Main.java
+  // compiled from: es.davidEguaras._0_ByteCodeCompiler.Files.java
 
   // access flags 0x1
   public <init>()V

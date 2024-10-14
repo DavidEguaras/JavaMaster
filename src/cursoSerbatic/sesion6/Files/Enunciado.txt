@@ -1,0 +1,11 @@
+Crear fichero, comprobar que existe y si no crearlo.
+
+Introducir un numero aleatorio de lineas 5 a 10.
+
+Hacer una modificación en el fichero, añadiendo la linea, "hemos modificado el fichero".
+
+Quitar la linea numero 3.
+
+Renombrar el fichero una vez que se haya modificado.
+
+Guardar una copia del original antes de renombrar.
