@@ -48,6 +48,8 @@ public class Empleado extends Usuario implements EmisorCorreo<Cliente>, Receptor
     public ListaCorreos getCorreosRecibidos(){
         return correosRecibidos;
     }
+
+
     //metodo interfaz
     public boolean enviarCorreo(){
         //implementar Scanner para leer el asunto y el mensaje y el receptor
