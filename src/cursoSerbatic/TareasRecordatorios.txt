@@ -1,47 +1,75 @@
+https://es.wikipedia.org/wiki/Problema_de_la_cena_de_los_fil%C3%B3sofos
+https://resolviendoejerciciosdeprogramacion.blogspot.com/2014/05/ejercicio-de-concurrencia-en-java.html
+
+
+
+
+
+
+https://www.youtube.com/watch?v=gvQGKRlgop4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 package cursoSerbatic.sesion8;
 
 import java.util.Scanner;
 
-public class MenuPrincipal {
+public class CosasDelMenu {
 
-    public static void main(String[] args) throws InterruptedException {
-        Scanner scanner = new Scanner(System.in);
-        int opcion;
+            public static void main(String[] args) throws InterruptedException {
+                Scanner scanner = new Scanner(System.in);
+                int opcion;
 
-        do {
-            System.out.println("=== Menú Principal ===");
-            System.out.println("1. Crear ficheros con prioridad");
-            System.out.println("2. Hilo demonio contar líneas en fichero o base de datos");
-            System.out.println("3. Monitorear inserciones en fichero o base de datos");
-            System.out.println("4. Bloquear y desbloquear método de escritura");
-            System.out.println("0. Salir");
-            System.out.print("Elija una opción: ");
-            opcion = scanner.nextInt();
+                do {
+                    System.out.println("=== Menú Principal ===");
+                    System.out.println("1. Crear ficheros con prioridad");
+                    System.out.println("2. Hilo demonio contar líneas en fichero o base de datos");
+                    System.out.println("3. Monitorear inserciones en fichero o base de datos");
+                    System.out.println("4. Bloquear y desbloquear método de escritura");
+                    System.out.println("0. Salir");
+                    System.out.print("Elija una opción: ");
+                    opcion = scanner.nextInt();
 
-            switch (opcion) {
-                case 1:
-                    ejecutarCrearFicherosConPrioridad();
-                    break;
-                case 2:
-                    ejecutarContarLineas();
-                    break;
-                case 3:
-                    ejecutarMonitorInserciones();
-                    break;
-                case 4:
-                    ejecutarBloquearYDesbloquear();
-                    break;
-                case 0:
-                    System.out.println("Saliendo...");
-                    break;
-                default:
-                    System.out.println("Opción no válida, intente nuevamente.");
+                    switch (opcion) {
+                        case 1:
+                            ejecutarCrearFicherosConPrioridad();
+                            break;
+                        case 2:
+                            ejecutarContarLineas();
+                            break;
+                        case 3:
+                            ejecutarMonitorInserciones();
+                            break;
+                        case 4:
+                            ejecutarBloquearYDesbloquear();
+                            break;
+                        case 0:
+                            System.out.println("Saliendo...");
+                            break;
+                        default:
+                            System.out.println("Opción no válida, intente nuevamente.");
+                    }
+                    System.out.println();
+                } while (opcion != 0);
+
+                scanner.close();
             }
-            System.out.println();
-        } while (opcion != 0);
-
-        scanner.close();
-    }
 
     // Método para el Ejercicio 1: Crear Ficheros con Prioridad
     public static void ejecutarCrearFicherosConPrioridad() {
@@ -252,7 +280,6 @@ public class CrearFicherosConPrioridad {
         hilo3.start();
     }
 }
-
 
 
 
