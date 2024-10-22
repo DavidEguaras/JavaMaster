@@ -1,4 +1,4 @@
-first lets address parameters versus "attributes". Parameters, as you surmised, are submitted along with the request from a client.
+First lets address parameters versus "attributes". Parameters, as you surmised, are submitted along with the request from a client.
 They are frequently form inputs, but can also be gathered from the query string on the request. Usually a GET will have the params in the query string, and a POST or PUT will have them in the request body.
 The important thing to know about parameters, is that they are a means for the client to send information to the server.
 
