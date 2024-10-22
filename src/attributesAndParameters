@@ -1,0 +1,17 @@
+first lets address parameters versus "attributes". Parameters, as you surmised, are submitted along with the request from a client.
+They are frequently form inputs, but can also be gathered from the query string on the request. Usually a GET will have the params in the query string, and a POST or PUT will have them in the request body.
+The important thing to know about parameters, is that they are a means for the client to send information to the server.
+
+"Attributes" on the other hand, are completely a server-side concept.
+Essentially they are just a way for your server-side code to store data.
+Think of them as an alternative to global or instance variables for the servlet, both of which cannot be used in order to avoid disaster.
+
+"Attributes" are more properly called "scoped variables" so if you see the alternative term, it's referring to the same thing.
+Scoped variables are so called because they can be placed at four scopes: page, request, session and application; all using
+setAttribute() and getAttribute() on the respective scope objects.
+
+Page scope is limited to within JSPs and invalidates when the JSP is finished processing. It's not available in a servlet.
+Request scope exists for the duration of a single request. That's why it's most often used to carry data from a servlet to a forwarded JSP.
+Session scope is associated with a browser instance and so is per-user and per-browser. This makes it useful to remember info for a single user over the course of multiple requests.
+
+Application scope is "global" to the application and is valid as long as the web app is active. It's a good way to store universal read-only data set at app startup.
