@@ -10,9 +10,9 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        GestorDePacientes gestorDePacientes = new GestorDePacientes();  // Usamos el nuevo nombre
-        Enfermera enfermera1 = new Enfermera(1234, false, 1);  // Ejemplo de una enfermera
-        Thread hiloEnfermera = new Thread(enfermera1);  // Creamos un hilo para la enfermera
+        GestorDePacientes gestorDePacientes = new GestorDePacientes();
+        Enfermera enfermera1 = new Enfermera(1234, false, 1);
+        Thread hiloEnfermera = new Thread(enfermera1);
 
         boolean exit = false;
 

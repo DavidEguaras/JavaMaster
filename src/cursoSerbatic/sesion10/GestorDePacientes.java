@@ -19,11 +19,10 @@ public class GestorDePacientes extends Thread {
 
                 Centro.pacientes.add(nuevoPaciente);
                 synchronized(Centro.aVacunar) {
-                    Centro.aVacunar.add(nuevoPaciente);  // Añadir a la lista de vacunación
+                    Centro.aVacunar.add(nuevoPaciente);
                 }
                 System.out.println("Paciente añadido con DNI: " + dni);
 
-                // Esperar 5 segundos antes de insertar el siguiente paciente
                 Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
